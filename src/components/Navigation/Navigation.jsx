@@ -8,8 +8,6 @@ const Navigation = () => {
           {name}
         </a>
       ))}
-      {/* <a href="/">{navConfig[0].name}</a>
-        <a href="/">{navConfig[1].name}</a> */}
     </nav>
   );
 };

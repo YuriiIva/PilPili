@@ -6,12 +6,12 @@ import Menu from '../Menu/Menu';
 
 const Main = () => {
   return (
-    <div>
-      <Header />
+    <main>
+      <Header title="Main menu" />
       <Hero />
       <Menu />
       <Footer />
-    </div>
+    </main>
   );
 };
 
