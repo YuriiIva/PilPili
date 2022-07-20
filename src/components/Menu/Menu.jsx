@@ -1,63 +1,81 @@
-import React from 'react';
+import { useState } from 'react';
+import FirstMenu from './FirstMenu/FirstMenu';
+import s from './Menu.module.css';
+import Submenu from './Submenu/Submenu';
 
 const Menu = () => {
+  const [isOpenMenu, setisOpenMenu] = useState(false);
+  const [isOpenFirstMenu, setIsOpenFirstMenu] = useState(false);
+
+  const handleChange = e => {
+    if (e.target.id === 'первые') {
+      setIsOpenFirstMenu(prev => !prev);
+    }
+    if (e.target.id === 'Основные') {
+      setisOpenMenu(prev => !prev);
+    }
+  };
   return (
     <div>
-      <ul>
-        <li>
-          <a href="https://www.facebook.com">
-            <img
-              src={require('images/main-menu.jpg')}
-              alt="Main menu"
-              width={70}
-              height={70}
-            ></img>
-            Main menu
-          </a>
+      <h2>Menu</h2>
+      <ul className={s.list}>
+        <li className={s.item}>
+          <button
+            type="buttom"
+            onClick={handleChange}
+            id="первые"
+            className={s.btn}
+          >
+            {' '}
+            Первые блюда
+          </button>
         </li>
-        <li>
-          <a href="../../images/hinkali.jpg">
-            <img
-              src={require('images/hinkali.jpg')}
-              alt="Main menu"
-              width={70}
-              height={70}
-            ></img>
-            Hinkali
-          </a>
+        {isOpenFirstMenu && <FirstMenu />}
+        <li className={s.item}>
+          <button
+            type="buttom"
+            onClick={handleChange}
+            id="Основные"
+            className={s.btn}
+          >
+            {' '}
+            Основные
+          </button>
         </li>
-        <li>
-          <a href="../../images/bakery.jpg">
-            <img
-              src={require('images/bakery.jpg')}
-              alt="Main menu"
-              width={70}
-              height={70}
-            ></img>
-            Bakery products
-          </a>
+        {isOpenMenu && <Submenu />}
+
+        <li className={s.item}>
+          <button
+            type="buttom"
+            onClick={handleChange}
+            id="выпечка"
+            className={s.btn}
+          >
+            {' '}
+            Выпечка
+          </button>
         </li>
-        <li>
-          <a href="../../images/sets.jpg">
-            <img
-              src={require('images/sets.jpg')}
-              alt="Main menu"
-              width={70}
-              height={70}
-            ></img>
-            Gift Baskets
-          </a>
+        <li className={s.item}>
+          <button
+            type="buttom"
+            onClick={handleChange}
+            id="наборы"
+            className={s.btn}
+          >
+            {' '}
+            Подарочные наборы
+          </button>
         </li>
-        <li>
-          <a href="../../images/alcohol.jpg">
-            <img
-              src={require('images/alcohol.jpg')}
-              alt="Main menu"
-              width={70}
-              height={70}
-            ></img>
-            Alcohol
-          </a>
+        <li className={s.item}>
+          <button
+            type="buttom"
+            onClick={handleChange}
+            id="Алкоголь"
+            className={s.btn}
+          >
+            {' '}
+            Алкоголь
+          </button>
         </li>
       </ul>
     </div>

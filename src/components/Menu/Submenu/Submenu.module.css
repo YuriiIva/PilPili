@@ -1,0 +1,9 @@
+.btn {
+  background-color: inherit;
+  border: none;
+  text-decoration: wavy;
+}
+.price {
+  color: rgb(17, 156, 77);
+  margin-left: 30px;
+}

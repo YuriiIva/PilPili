@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link {
+  color: #000;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  cursor: pointer;
+}
+.link:hover {
+  color: rgb(167, 44, 10);
+}

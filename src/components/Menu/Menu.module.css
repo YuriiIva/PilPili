@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.btn {
+  background-color: inherit;
+  border: none;
+  font-size: 17px;
+  line-height: 1.19;
+  font-weight: 600;
+  cursor: pointer;
+}

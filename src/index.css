@@ -1,7 +1,9 @@
-@import-normalize: root{
-  --accent-color: 'rgb(9, 97, 105)';
-  --text-color: 'rgb(8, 3, 3)';
-};
+@import-normalize;
+
+:root {
+  --accent-color: rgb(9, 97, 105);
+  --text-color: rgb(8, 3, 3);
+}
 
 body {
   margin: 0;

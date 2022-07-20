@@ -2,12 +2,12 @@
   position: sticky;
   top: 0%;
   min-height: 100vh;
-  width: 320px;
+  width: 80px;
   align-self: flex-start;
   display: flex;
   flex-direction: column;
   padding-bottom: 24px;
-  background-color: aliceblue;
+  background-color: rgb(140, 155, 169);
   will-change: width;
   transition: width 350ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px;
@@ -15,7 +15,7 @@
 }
 
 .Sidebar-close {
-  width: 72px;
+  width: 32px;
 }
 .Sidebar-decor {
   display: flex;
@@ -23,17 +23,17 @@
   justify-content: space-between;
   height: 80px;
   padding-right: 20px;
-  background: #000;
+  background: rgb(5, 67, 32);
   overflow: hidden;
 }
 .toggle-btn {
   position: absolute;
   right: -16px;
   top: 96px;
-  height: 32px;
-  width: 32px;
-  background: var(--accent-color) url('../../images/main-menu.jpg') 49% 50%
-    no-repeat;
+  height: 30px;
+  width: 30px;
+  background: rgba(181, 154, 3, 0)
+    url('../../images/arrow-next-right-svgrepo-com.svg') 45% 40% no-repeat;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -62,7 +62,7 @@
   }
 }
 .Sidebar-closed .toggle-btn {
-  background-image: url(../../images/hinkali.jpg);
+  background-image: url(../../images/arrow-back-svgrepo-com\\(2\).svg);
   background-position: 51% 50%;
 }
 .Sidebar-closed .toggle-btn:hover {
