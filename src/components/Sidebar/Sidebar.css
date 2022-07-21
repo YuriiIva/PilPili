@@ -33,7 +33,7 @@
   height: 30px;
   width: 30px;
   background: rgba(181, 154, 3, 0)
-    url('../../images/arrow-next-right-svgrepo-com.svg') 45% 40% no-repeat;
+    url('../../images/arrow-next-right-svgrepo-com.svg') 51% 50% no-repeat;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -41,7 +41,7 @@
   transition: all 300ms;
 }
 .toggle-btn:hover {
-  animation-name: goLeft;
+  animation-name: goRight;
   animation-duration: 1.2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -62,11 +62,11 @@
   }
 }
 .Sidebar-closed .toggle-btn {
-  background-image: url(../../images/arrow-back-svgrepo-com\\(2\).svg);
+  background-image: url(../../images/arrow-next-right-svgrepo-com.svg);
   background-position: 51% 50%;
 }
-.Sidebar-closed .toggle-btn:hover {
-  animation-name: goRight;
+.Sidebar-close .toggle-btn:hover {
+  animation-name: goLeft;
 }
 
 @keyframes goRight {

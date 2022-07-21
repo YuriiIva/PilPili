@@ -1,18 +1,26 @@
 import { useState } from 'react';
-import FirstMenu from './FirstMenu/FirstMenu';
 import s from './Menu.module.css';
+import { hot, hincal, salat } from '../../data/forMenu';
 import Submenu from './Submenu/Submenu';
 
 const Menu = () => {
   const [isOpenMenu, setisOpenMenu] = useState(false);
   const [isOpenFirstMenu, setIsOpenFirstMenu] = useState(false);
+  const [hinkali, setHinkali] = useState(false);
 
   const handleChange = e => {
-    if (e.target.id === 'первые') {
-      setIsOpenFirstMenu(prev => !prev);
-    }
-    if (e.target.id === 'Основные') {
-      setisOpenMenu(prev => !prev);
+    switch (e.target.id) {
+      case 'Закуски':
+        setIsOpenFirstMenu(prev => !prev);
+        return;
+      case 'Гаряче':
+        setisOpenMenu(prev => !prev);
+        return;
+      case 'Хинкали':
+        setHinkali(prev => !prev);
+        return;
+      default:
+        break;
     }
   };
   return (
@@ -23,59 +31,36 @@ const Menu = () => {
           <button
             type="buttom"
             onClick={handleChange}
-            id="первые"
+            id={'Закуски'}
             className={s.btn}
           >
-            {' '}
-            Первые блюда
+            Закуски
           </button>
+          {isOpenFirstMenu && <Submenu date={salat} />}
         </li>
-        {isOpenFirstMenu && <FirstMenu />}
-        <li className={s.item}>
-          <button
-            type="buttom"
-            onClick={handleChange}
-            id="Основные"
-            className={s.btn}
-          >
-            {' '}
-            Основные
-          </button>
-        </li>
-        {isOpenMenu && <Submenu />}
 
         <li className={s.item}>
           <button
             type="buttom"
             onClick={handleChange}
-            id="выпечка"
+            id={'Гаряче'}
             className={s.btn}
           >
-            {' '}
-            Выпечка
+            Гаряче
           </button>
+          {isOpenMenu && <Submenu date={hot} />}
         </li>
+
         <li className={s.item}>
           <button
             type="buttom"
             onClick={handleChange}
-            id="наборы"
+            id={'Хинкали'}
             className={s.btn}
           >
-            {' '}
-            Подарочные наборы
+            Хинкали
           </button>
-        </li>
-        <li className={s.item}>
-          <button
-            type="buttom"
-            onClick={handleChange}
-            id="Алкоголь"
-            className={s.btn}
-          >
-            {' '}
-            Алкоголь
-          </button>
+          {hinkali && <Submenu date={hincal} />}
         </li>
       </ul>
     </div>
