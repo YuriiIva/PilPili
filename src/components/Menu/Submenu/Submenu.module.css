@@ -1,9 +1,17 @@
 .btn {
-  background-color: inherit;
-  border: none;
+  background-color: greenyellow;
+
   text-decoration: wavy;
 }
 .price {
   color: rgb(17, 156, 77);
   margin-left: 30px;
+}
+.link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right_column {
+  display: flex;
 }
