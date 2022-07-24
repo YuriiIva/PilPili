@@ -20,7 +20,7 @@ const Submenu = ({ date }) => {
           <div className={s.left_column}>
             <p>{name}</p>
             <button className={s.btn} onClick={() => handelOpen(description)}>
-              Склад
+              Деталі
             </button>
           </div>
           <p className={s.price}>
