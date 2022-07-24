@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Pilpili/static/css/main.c314f570.css",
+    "main.css": "/Pilpili/static/css/main.76b5128c.css",
     "main.js": "/Pilpili/static/js/main.c661daac.js",
     "static/media/sets.jpg": "/Pilpili/static/media/sets.1f4b4709dcf324f0df22.jpg",
     "static/media/bakery.jpg": "/Pilpili/static/media/bakery.0f1add813c079a477d15.jpg",
@@ -11,11 +11,11 @@
     "static/media/arrow-back-svgrepo-com (2).svg": "/Pilpili/static/media/arrow-back-svgrepo-com (2).84ac64a7f5b285d324db.svg",
     "static/media/arrow-next-right-svgrepo-com.svg": "/Pilpili/static/media/arrow-next-right-svgrepo-com.745d833bd5c5bc6a97ae.svg",
     "index.html": "/Pilpili/index.html",
-    "main.c314f570.css.map": "/Pilpili/static/css/main.c314f570.css.map",
+    "main.76b5128c.css.map": "/Pilpili/static/css/main.76b5128c.css.map",
     "main.c661daac.js.map": "/Pilpili/static/js/main.c661daac.js.map"
   },
   "entrypoints": [
-    "static/css/main.c314f570.css",
+    "static/css/main.76b5128c.css",
     "static/js/main.c661daac.js"
   ]
 }
