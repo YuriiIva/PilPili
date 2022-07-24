@@ -16,6 +16,7 @@
 
   min-width: 315px;
   width: 80vw;
+  max-width: max-content;
   min-height: 12vw;
   background-color: #fff;
   border-radius: 30px;
