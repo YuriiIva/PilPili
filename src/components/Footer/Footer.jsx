@@ -7,42 +7,22 @@ const Footer = () => {
       <h2>Our dishes</h2>
       <ul className={s.list}>
         <li className={s.item}>
-          <img src={require('images/1.jpg')} alt="" width={80} height={60} />
+          <img src={require('images/1.jpg')} alt="" className={s.img} />
         </li>
         <li className={s.item}>
-          <img
-            src={require('images/bakery.jpg')}
-            alt=""
-            width={80}
-            height={60}
-          />
+          <img src={require('images/bakery.jpg')} alt="" className={s.img} />
         </li>
         <li className={s.item}>
-          <img
-            src={require('images/hinkali.jpg')}
-            alt=""
-            width={80}
-            height={60}
-          />
+          <img src={require('images/hinkali.jpg')} alt="" className={s.img} />
         </li>
         <li className={s.item}>
-          <img src={require('images/sets.jpg')} alt="" width={80} height={60} />
+          <img src={require('images/sets.jpg')} alt="" className={s.img} />
         </li>
         <li className={s.item}>
-          <img
-            src={require('images/alcohol.jpg')}
-            alt=""
-            width={80}
-            height={60}
-          />
+          <img src={require('images/alcohol.jpg')} alt="" className={s.img} />
         </li>
         <li className={s.item}>
-          <img
-            src={require('images/alcohol.jpg')}
-            alt=""
-            width={80}
-            height={60}
-          />
+          <img src={require('images/alcohol.jpg')} alt="" className={s.img} />
         </li>
       </ul>
     </div>
