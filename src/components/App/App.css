@@ -4,4 +4,17 @@
   align-items: stretch;
   width: 100%;
   min-height: 100vh;
+  max-width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    max-width: 716px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .main-container {
+    max-width: 1228px;
+  }
 }
