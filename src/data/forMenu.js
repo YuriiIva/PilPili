@@ -27,6 +27,13 @@ export const hot = [
     description:
       'варена-смажена курка у вершковому соусі з додаванням часнику та сванської солі',
   },
+  {
+    name: 'Страва від шефа',
+    price: 200,
+    gramm: 350,
+    description:
+      '!!! страва від шефа змінюється кожного дня, запитай у офіціанта',
+  },
 ];
 
 export const hincal = [
@@ -77,5 +84,74 @@ export const salat = [
     gramm: 100,
     description:
       'холодна закуска зі шпинату, волоського горіху,з додаванням  грузинських прянощів та зелені',
+  },
+];
+
+export const hachap = [
+  {
+    name: 'По-мегрельськи',
+    price: 150,
+    gramm: 450,
+    description: 'тісто дріжджове, сир Імеретинський',
+  },
+  {
+    name: 'По-імеретинськи ',
+    price: 140,
+    gramm: 420,
+    description: 'тісто дріжджове, подвійний сир Імеритинський, сулугуні',
+  },
+  {
+    name: 'По-аджарськи',
+    price: 140,
+    gramm: 420,
+    description: 'тісто дріжджове, сир Імеретинський, яйце',
+  },
+  {
+    name: 'Кубдарі',
+    price: 165,
+    gramm: 450,
+    description: 'тісто дріжджове, мясо яловичини та свинини',
+  },
+  {
+    name: 'Від шефа',
+    price: 250,
+    gramm: 500,
+    description: 'хачапурі на дріжджовому тісті, з додаванням сиру Дор-блю',
+  },
+];
+
+export const bakery = [
+  {
+    name: 'Багет',
+    price: 45,
+    gramm: null,
+    description: 'свіжий багет за французьким рецептом	',
+  },
+  {
+    name: 'Шоті ',
+    price: 40,
+    gramm: null,
+    description: 'грузинський хліб',
+  },
+];
+
+export const soda = [
+  {
+    name: 'Тархун',
+    price: 45,
+    gramm: null,
+    description: 'ммм...вкусняха	',
+  },
+  {
+    name: 'Сітро',
+    price: 45,
+    gramm: null,
+    description: 'ммм... вкусняха	',
+  },
+  {
+    name: 'Дюшес',
+    price: 45,
+    gramm: null,
+    description: 'ммм... вкусняха	',
   },
 ];
