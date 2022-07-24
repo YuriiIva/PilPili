@@ -2,6 +2,8 @@ import { useState } from 'react';
 import s from './Menu.module.css';
 import { hot, hincal, salat } from '../../data/forMenu';
 import Submenu from './Submenu/Submenu';
+import { FiChevronRight } from 'react-icons/fi';
+import { FiChevronDown } from 'react-icons/fi';
 
 const Menu = () => {
   const [isOpenMenu, setisOpenMenu] = useState(false);
@@ -12,12 +14,15 @@ const Menu = () => {
     switch (e.target.id) {
       case 'Закуски':
         setIsOpenFirstMenu(prev => !prev);
+
         return;
       case 'Гаряче':
         setisOpenMenu(prev => !prev);
+
         return;
       case 'Хинкали':
         setHinkali(prev => !prev);
+
         return;
       default:
         break;
@@ -35,6 +40,9 @@ const Menu = () => {
             className={s.btn}
           >
             Закуски
+            <span>
+              {!isOpenFirstMenu ? <FiChevronRight /> : <FiChevronDown />}
+            </span>
           </button>
           {isOpenFirstMenu && <Submenu date={salat} />}
         </li>
@@ -47,6 +55,7 @@ const Menu = () => {
             className={s.btn}
           >
             Гаряче
+            <span>{!isOpenMenu ? <FiChevronRight /> : <FiChevronDown />}</span>
           </button>
           {isOpenMenu && <Submenu date={hot} />}
         </li>
@@ -59,6 +68,7 @@ const Menu = () => {
             className={s.btn}
           >
             Хинкали
+            <span>{!hinkali ? <FiChevronRight /> : <FiChevronDown />}</span>
           </button>
           {hinkali && <Submenu date={hincal} />}
         </li>

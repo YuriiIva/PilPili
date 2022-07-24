@@ -4,10 +4,24 @@
   flex-direction: column;
 }
 .btn {
+  display: flex;
+  align-items: center;
   background-color: inherit;
   border: none;
   font-size: 17px;
   line-height: 1.19;
   font-weight: 600;
   cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+  .btn {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    font-size: 24px;
+  }
 }

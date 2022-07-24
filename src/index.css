@@ -3,6 +3,10 @@
 :root {
   --accent-color: rgb(9, 97, 105);
   --text-color: rgb(8, 3, 3);
+  --red-color: rgb(177, 28, 28);
+  --btn-color: rgba(0, 0, 0, 0.2);
+  --green-color: rgb(5, 67, 32);
+  --bar-color: rgb(140, 155, 169);
 }
 
 body {
@@ -14,6 +18,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-color);
   background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: calc(14 / 12);
 }
 
 code {
@@ -54,29 +62,11 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
 }
 
 .list {
   padding: 0;
   margin: 0;
-}
-
-/* ------ Modal ------- */
-
-.overlay {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 50vw;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(150, 37, 37, 0.8);
-  z-index: 1200;
-}
-
-.modal {
-  max-width: calc(100vw - 48px);
-  max-height: calc(100vh - 24px);
 }

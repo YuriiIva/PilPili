@@ -21,11 +21,12 @@ const Sidebar = () => {
     <div className={definestyles(isOpen)}>
       <div className="Sidebar-decor"></div>
       <button
+        type="button"
         className="toggle-btn"
         aria-label="Toggle sidebar"
         onClick={toggle}
       ></button>
-      <Navigation />
+      <Navigation isOpen={isOpen} />
     </div>
   );
 };

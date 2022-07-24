@@ -4,9 +4,11 @@ import s from './Submenu.module.css';
 
 const Submenu = ({ date }) => {
   const [isOpenMod, setisOpenMod] = useState(false);
+  const [descr, setDescr] = useState(null);
 
-  const handelOpen = () => {
+  const handelOpen = description => {
     setisOpenMod(true);
+    setDescr(description);
   };
   const closeForm = () => {
     setisOpenMod(prev => !prev);
@@ -15,21 +17,18 @@ const Submenu = ({ date }) => {
     <ul className={s.section}>
       {date.map(({ name, price, gramm, one, description }) => (
         <li className={s.link}>
-          <div className={s.right_column}>
+          <div className={s.left_column}>
             <p>{name}</p>
-            <button className={s.btn} onClick={handelOpen}>
+            <button className={s.btn} onClick={() => handelOpen(description)}>
               Склад
             </button>
-            {isOpenMod && (
-              <Modal description={description} closeForm={closeForm} />
-            )}
           </div>
-
-          <p>
+          <p className={s.price}>
             {price} грн / {gramm || one}
           </p>
         </li>
       ))}
+      {isOpenMod && <Modal description={descr} closeForm={closeForm} />}
     </ul>
   );
 };
