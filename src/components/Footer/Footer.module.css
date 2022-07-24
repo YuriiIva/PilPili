@@ -14,10 +14,21 @@
   margin-bottom: 5px;
   margin-right: 5px;
 }
+.title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
 @media screen and (min-width: 400px) {
   .img {
     width: 90px;
     height: 70px;
+  }
+  .title {
+    font-size: 22px;
+    line-height: 1.19;
+    font-weight: 700;
   }
 }
 
@@ -26,11 +37,17 @@
     width: 100px;
     height: 140px;
   }
+  .title {
+    font-size: 27px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .img {
     width: 200px;
     height: 180px;
+  }
+  .title {
+    font-size: 33px;
   }
 }

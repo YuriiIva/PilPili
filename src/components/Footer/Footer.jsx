@@ -4,7 +4,7 @@ import s from './Footer.module.css';
 const Footer = () => {
   return (
     <div>
-      <h2>Our dishes</h2>
+      <h2 className={s.title}>Our dishes</h2>
       <ul className={s.list}>
         <li className={s.item}>
           <img src={require('images/1.jpg')} alt="" className={s.img} />

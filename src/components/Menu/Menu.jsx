@@ -30,7 +30,7 @@ const Menu = () => {
   };
   return (
     <div>
-      <h2>Menu</h2>
+      <h2 className={s.title}>Menu</h2>
       <ul className={s.list}>
         <li className={s.item}>
           <button
