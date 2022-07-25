@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Pilpili/static/css/main.2ee5c46a.css",
-    "main.js": "/Pilpili/static/js/main.82bfee0a.js",
+    "main.css": "/Pilpili/static/css/main.e188e6b9.css",
+    "main.js": "/Pilpili/static/js/main.eeb0185f.js",
     "static/media/sets.jpg": "/Pilpili/static/media/sets.1f4b4709dcf324f0df22.jpg",
     "static/media/bakery.jpg": "/Pilpili/static/media/bakery.0f1add813c079a477d15.jpg",
     "static/media/hinkali.jpg": "/Pilpili/static/media/hinkali.6080ff5d3b585551bc55.jpg",
@@ -11,11 +11,11 @@
     "static/media/arrow-back-svgrepo-com (2).svg": "/Pilpili/static/media/arrow-back-svgrepo-com (2).84ac64a7f5b285d324db.svg",
     "static/media/arrow-next-right-svgrepo-com.svg": "/Pilpili/static/media/arrow-next-right-svgrepo-com.745d833bd5c5bc6a97ae.svg",
     "index.html": "/Pilpili/index.html",
-    "main.2ee5c46a.css.map": "/Pilpili/static/css/main.2ee5c46a.css.map",
-    "main.82bfee0a.js.map": "/Pilpili/static/js/main.82bfee0a.js.map"
+    "main.e188e6b9.css.map": "/Pilpili/static/css/main.e188e6b9.css.map",
+    "main.eeb0185f.js.map": "/Pilpili/static/js/main.eeb0185f.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ee5c46a.css",
-    "static/js/main.82bfee0a.js"
+    "static/css/main.e188e6b9.css",
+    "static/js/main.eeb0185f.js"
   ]
 }
