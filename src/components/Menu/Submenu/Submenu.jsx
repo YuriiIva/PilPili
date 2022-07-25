@@ -19,10 +19,10 @@ const Submenu = ({ date }) => {
         <li className={s.link}>
           <div className={s.left_column}>
             <p>{name}</p>
-            <button className={s.btn} onClick={() => handelOpen(description)}>
-              Деталі
-            </button>
           </div>
+          <button className={s.btn} onClick={() => handelOpen(description)}>
+            Деталі
+          </button>
           <p className={s.price}>
             {price} грн / {gramm || one}
           </p>

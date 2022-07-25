@@ -124,13 +124,13 @@ export const bakery = [
   {
     name: 'Багет',
     price: 45,
-    gramm: null,
+    one: 1,
     description: 'свіжий багет за французьким рецептом	',
   },
   {
     name: 'Шоті ',
     price: 40,
-    gramm: null,
+    one: 1,
     description: 'грузинський хліб',
   },
 ];
@@ -139,19 +139,19 @@ export const soda = [
   {
     name: 'Тархун',
     price: 45,
-    gramm: null,
+    one: 1,
     description: 'ммм...вкусняха	',
   },
   {
     name: 'Сітро',
     price: 45,
-    gramm: null,
+    one: 1,
     description: 'ммм... вкусняха	',
   },
   {
     name: 'Дюшес',
     price: 45,
-    gramm: null,
+    one: 1,
     description: 'ммм... вкусняха	',
   },
 ];

@@ -4,14 +4,13 @@
   text-decoration: wavy;
   font-weight: inherit;
   margin-left: 5px;
+  width: 50px;
   border: none;
   cursor: pointer;
   border-radius: 30%;
   box-shadow: 2px 2px 2px 1px rgb(34 60 80 / 57%);
-  /* box-shadow: 0 10px 5px -5px rgba(30, 129, 204, 0.2); */
 }
 .btn:hover {
-  /* color: var(--accent-color); */
   box-shadow: 0px 0px 2px 1px rgb(34 60 80 / 57%);
 }
 .price {
@@ -19,9 +18,9 @@
   margin-left: 10px;
 }
 .link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
 }
 
 .left_column {
