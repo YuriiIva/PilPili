@@ -17,14 +17,15 @@ const Submenu = ({ date }) => {
     <ul className={s.section}>
       {date.map(({ name, price, gramm, one, description }) => (
         <li className={s.link}>
-          <div className={s.left_column}>
+          {/* <div className={s.left_column}>
             <p>{name}</p>
-          </div>
+          </div> */}
           <button className={s.btn} onClick={() => handelOpen(description)}>
-            Деталі
+            {name}
           </button>
           <p className={s.price}>
-            {price} грн / {gramm || one}
+            <span className={s.priceSpan}>{price} грн</span>/
+            <span>{gramm || one} </span>
           </p>
         </li>
       ))}

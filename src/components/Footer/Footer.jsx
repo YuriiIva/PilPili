@@ -22,7 +22,7 @@ const Footer = () => {
           <img src={require('images/alcohol.jpg')} alt="" className={s.img} />
         </li>
         <li className={s.item}>
-          <img src={require('images/alcohol.jpg')} alt="" className={s.img} />
+          <img src={require('images/Rolls.jpg')} alt="" className={s.img} />
         </li>
       </ul>
     </div>
